@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Flow - EventureX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-pink': '#ec4899',
+                        'neon-blue': '#3b82f6',
+                        'neon-green': '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black/90 backdrop-blur-sm border-b border-purple-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold gradient-text">EventureX</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                        <a href="/events/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Events</a>
+                        <a href="/departments/" class="text-neon-purple px-3 py-2">Departments</a>
+                        <a href="/founders.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                        <a href="/x-core.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">X-Core</a>
+                        <a href="/collaborators.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                        <a href="/join.html" class="bg-neon-purple hover:bg-purple-600 text-white px-4 py-2 rounded-md transition-colors">Join Us</a>
+                        <a href="/contact.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-neon-purple focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-900 border-t border-purple-500/30">
+                <a href="/" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                <a href="/events/" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">Events</a>
+                <a href="/departments/" class="block text-neon-purple px-3 py-2">Departments</a>
+                <a href="/founders.html" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                <a href="/x-core.html" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">X-Core</a>
+                <a href="/collaborators.html" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                <a href="/join.html" class="block bg-neon-purple hover:bg-purple-600 text-white px-3 py-2 rounded-md mx-3 mb-2">Join Us</a>
+                <a href="/contact.html" class="block text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-20 bg-gradient-to-br from-black via-purple-900/20 to-black text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Show Flow</h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            The heart of every event's performance. Manage MCs, write compelling scripts, and coordinate voice operations to ensure seamless event flow and audience engagement.
+        </p>
+    </header>
+
+    <!-- Department Roles -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Roles in Show Flow</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-6 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-bold mb-2 text-neon-purple">MC Management</h3>
+                    <p class="text-gray-400 text-sm">Coordinate and manage hosts for events to ensure smooth performances.</p>
+                </div>
+                
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-6 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-bold mb-2 text-neon-pink">Script Writing</h3>
+                    <p class="text-gray-400 text-sm">Write engaging scripts to keep the audience entertained and informed.</p>
+                </div>
+                
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-6 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-bold mb-2 text-neon-blue">Voice Operations</h3>
+                    <p class="text-gray-400 text-sm">Handle microphones, announcements, and audio coordination during events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-purple-600 to-pink-600 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Join the Show Flow Department</h2>
+        <p class="text-xl mb-8 opacity-90">Be part of the team that ensures every event runs seamlessly from start to finish.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/join.html" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                Apply Now
+            </a>
+            <a href="/contact.html" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                Ask Questions
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-purple-500/30 py-12 text-center">
+        <p class="text-gray-400">&copy; 2025 EventureX. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
