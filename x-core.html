@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Core Team - EventureX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-pink': '#ec4899',
+                        'neon-blue': '#3b82f6',
+                        'neon-green': '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black/90 backdrop-blur-sm border-b border-purple-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold gradient-text">EventureX</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                        <a href="/events/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Events</a>
+                        <a href="/departments/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Departments</a>
+                        <a href="/founders.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                        <a href="/x-core.html" class="text-neon-purple px-3 py-2">X-Core</a>
+                        <a href="/collaborators.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                        <a href="/join.html" class="bg-neon-purple hover:bg-purple-600 text-white px-4 py-2 rounded-md transition-colors">Join Us</a>
+                        <a href="/contact.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-gradient-to-br from-black via-purple-900/20 to-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">X-Core Team</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Meet the dedicated core team members who drive EventureX's day-to-day operations and strategic initiatives. These experienced leaders mentor our growing community of students.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Manoj Krishnan -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Manoj Krishnan" class="w-16 h-16 rounded-full object-cover border-2 border-neon-purple mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Manoj Krishnan</h3>
+                                <p class="text-neon-purple font-medium text-sm">Operations Head</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Manoj brings three years of event operations experience to EventureX. He oversees all logistical aspects of our events, from vendor coordination to timeline management. His systematic approach ensures that every event runs smoothly behind the scenes.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Known for his problem-solving skills and calm demeanor under pressure, Manoj has successfully managed operations for over 25 events. He's passionate about training students in project management and operational excellence.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-purple/20 text-neon-purple px-2 py-1 rounded text-xs">Project Management</span>
+                            <span class="bg-neon-pink/20 text-neon-pink px-2 py-1 rounded text-xs">Logistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ananya Pillai -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Ananya Pillai" class="w-16 h-16 rounded-full object-cover border-2 border-neon-pink mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Ananya Pillai</h3>
+                                <p class="text-neon-pink font-medium text-sm">Creative Lead</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Ananya leads all creative initiatives at EventureX, from conceptualizing event themes to overseeing visual design and content creation. With a background in graphic design and marketing, she ensures every event has a cohesive creative vision.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            She has spearheaded the creative direction for EventureX's most successful events and regularly mentors students interested in design, branding, and creative careers. Ananya believes creativity and strategy go hand in hand.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-purple/20 text-neon-purple px-2 py-1 rounded text-xs">Creative Direction</span>
+                            <span class="bg-neon-pink/20 text-neon-pink px-2 py-1 rounded text-xs">Brand Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Siddharth Iyer -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face" alt="Siddharth Iyer" class="w-16 h-16 rounded-full object-cover border-2 border-neon-blue mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Siddharth Iyer</h3>
+                                <p class="text-neon-blue font-medium text-sm">Tech & Sound Head</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Siddharth oversees all technical aspects of EventureX productions, including sound engineering, lighting design, and AV setup. His expertise ensures that every performance and presentation has optimal technical support.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            With a background in electronics engineering and a passion for music production, Siddharth has designed sound systems for venues ranging from intimate gatherings to large festivals. He loves teaching students about technical production.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-purple/20 text-neon-purple px-2 py-1 rounded text-xs">Sound Engineering</span>
+                            <span class="bg-neon-blue/20 text-neon-blue px-2 py-1 rounded text-xs">Technical Production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meera Nair -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b742?w=80&h=80&fit=crop&crop=face" alt="Meera Nair" class="w-16 h-16 rounded-full object-cover border-2 border-neon-green mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Meera Nair</h3>
+                                <p class="text-neon-green font-medium text-sm">Student Outreach Head</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Meera leads student recruitment, training, and development programs at EventureX. She's responsible for identifying talent, conducting workshops, and ensuring that every student team member has a rewarding learning experience.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            With her background in psychology and human resources, Meera excels at matching students with roles that align with their interests and career goals. She's built EventureX's reputation as a platform for meaningful student development.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-green/20 text-neon-green px-2 py-1 rounded text-xs">Talent Development</span>
+                            <span class="bg-neon-pink/20 text-neon-pink px-2 py-1 rounded text-xs">Training & Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aakash Verma -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Aakash Verma" class="w-16 h-16 rounded-full object-cover border-2 border-neon-purple mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Aakash Verma</h3>
+                                <p class="text-neon-purple font-medium text-sm">Finance & Sponsorships</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Aakash manages EventureX's financial operations and builds partnerships with sponsors and collaborators. His strategic approach to business development has secured funding for numerous student opportunities and event enhancements.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Coming from a finance background with experience in startup fundraising, Aakash brings valuable business acumen to EventureX. He's passionate about teaching students entrepreneurial skills and business development strategies.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-purple/20 text-neon-purple px-2 py-1 rounded text-xs">Financial Planning</span>
+                            <span class="bg-neon-blue/20 text-neon-blue px-2 py-1 rounded text-xs">Partnership Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neha Roy -->
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-500 transition-all duration-300 hover:scale-105">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face" alt="Neha Roy" class="w-16 h-16 rounded-full object-cover border-2 border-neon-pink mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Neha Roy</h3>
+                                <p class="text-neon-pink font-medium text-sm">Hospitality & Guest Ops Lead</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            Neha ensures that every guest, artist, and attendee has an exceptional experience at EventureX events. She oversees hospitality operations, guest relations, and the overall attendee journey from arrival to departure.
+                        </p>
+                        
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            With her background in hospitality management and customer service, Neha has perfected the art of creating welcoming environments. She trains students in professional communication, cultural sensitivity, and service excellence.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neon-pink/20 text-neon-pink px-2 py-1 rounded text-xs">Guest Relations</span>
+                            <span class="bg-neon-green/20 text-neon-green px-2 py-1 rounded text-xs">Service Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes X-Core Special -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Makes Our X-Core Special</h2>
+            
+            <div class="prose prose-lg prose-invert max-w-none">
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    The X-Core team represents the perfect blend of experience, passion, and commitment to student development. Each member was once a student participant in EventureX who showed exceptional leadership potential and dedication to our mission. Their journey from student crew members to leadership positions embodies the growth opportunities that EventureX provides.
+                </p>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    What sets our X-Core apart is their dual focus: delivering professional-quality events while prioritizing the educational and developmental aspects of every project. They understand that EventureX is not just an event management company – it's a platform for student empowerment, skill development, and career preparation.
+                </p>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Each X-Core member actively mentors students, conducts training sessions, and creates opportunities for hands-on learning. They bring industry expertise while maintaining the student-centric culture that makes EventureX unique. Their collaborative approach ensures that every event becomes a learning laboratory where students can experiment, make mistakes, and grow professionally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Philosophy -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Leadership Philosophy</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌱</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Grow Together</h3>
+                    <p class="text-gray-400 text-sm">We believe in growing alongside our team members, learning from each project and each other.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Lead by Example</h3>
+                    <p class="text-gray-400 text-sm">Our X-Core demonstrates the standards we expect while supporting others to reach their potential.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Innovate Continuously</h3>
+                    <p class="text-gray-400 text-sm">We encourage creative problem-solving and aren't afraid to try new approaches to event management.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🤲</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Serve Students</h3>
+                    <p class="text-gray-400 text-sm">Every decision prioritizes the learning and development opportunities for our student team.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎪</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Deliver Excellence</h3>
+                    <p class="text-gray-400 text-sm">We maintain high standards while creating an environment where everyone can succeed.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-neon-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌟</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Celebrate Success</h3>
+                    <p class="text-gray-400 text-sm">We recognize achievements, both big and small, and celebrate the growth of every team member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Learn from Industry Professionals?</h2>
+            <p class="text-xl mb-8 opacity-90">Join EventureX and get mentorship from experienced professionals who started their journey as students just like you</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/join.html" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    Join Our Team
+                </a>
+                <a href="/contact.html" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    Ask Questions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">EventureX</h3>
+                    <p class="text-gray-400">Empowering students to create unforgettable events and gain real-world experience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/events/" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="/departments/" class="text-gray-400 hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="/join.html" class="text-gray-400 hover:text-white transition-colors">Join Us</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Team</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/founders.html" class="text-gray-400 hover:text-white transition-colors">Founders</a></li>
+                        <li><a href="/x-core.html" class="text-gray-400 hover:text-white transition-colors">X-Core Team</a></li>
+                        <li><a href="/collaborators.html" class="text-gray-400 hover:text-white transition-colors">Collaborators</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">eventurex25@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 EventureX. All rights reserved. Where Students Power Events.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

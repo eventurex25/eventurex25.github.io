@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Night 2022 - EventureX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-pink': '#ec4899',
+                        'neon-blue': '#3b82f6',
+                        'neon-green': '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black/90 backdrop-blur-sm border-b border-purple-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold gradient-text">EventureX</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                        <a href="/events/" class="text-neon-purple px-3 py-2">Events</a>
+                        <a href="/departments/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Departments</a>
+                        <a href="/founders.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                        <a href="/x-core.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">X-Core</a>
+                        <a href="/collaborators.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                        <a href="/join.html" class="bg-neon-purple hover:bg-purple-600 text-white px-4 py-2 rounded-md transition-colors">Join Us</a>
+                        <a href="/contact.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-black via-purple-900/20 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Music Night 2022</h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    An intimate evening of soul-stirring performances, acoustic melodies, and musical magic under the stars.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Stats -->
+    <section class="py-12 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-neon-purple mb-2">1,200+</div>
+                    <div class="text-gray-400">Attendees</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-pink mb-2">1</div>
+                    <div class="text-gray-400">Evening</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-blue mb-2">15</div>
+                    <div class="text-gray-400">Performances</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-green mb-2">45</div>
+                    <div class="text-gray-400">Crew Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Images -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop" alt="Acoustic Performance" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop" alt="Stage Lighting" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=400&h=300&fit=crop" alt="Audience Enjoying Music" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Description -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg prose-invert max-w-none">
+                <h2 class="text-3xl font-bold mb-8">About Music Night 2022</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Music Night 2022 was a testament to the power of intimate musical experiences. Unlike the high-energy festivals we're known for, this event focused on creating a cozy, acoustic atmosphere where every note could be felt in the heart. Set in our beautifully lit outdoor amphitheater, the evening featured a carefully curated lineup of both established and emerging artists.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    The event began at sunset with soft acoustic guitar melodies that gradually built into a diverse showcase of musical genres. From indie folk to contemporary jazz, classical crossover to original student compositions, Music Night 2022 celebrated the full spectrum of musical expression. What made this event truly special was the unplugged, acoustic format that allowed the raw talent and emotion of each performer to shine through.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Our student crew worked meticulously to create the perfect ambiance. Warm string lights created a canopy of stars above the audience, while carefully positioned sound equipment ensured that even the softest whisper of a song could be heard clearly throughout the venue. The intimate setting allowed for genuine connection between artists and audience, with many performances featuring spontaneous moments of crowd participation.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-8">
+                    One of the most memorable moments of the evening was an impromptu collaboration between three different artists who had never performed together before. The magic of live music and the supportive atmosphere created by our crew made such beautiful spontaneous moments possible throughout the night.
+                </p>
+
+                <h3 class="text-2xl font-bold mb-6">Event Highlights</h3>
+                <ul class="list-none space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Acoustic performances featuring guitar, piano, and vocals</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Open mic sessions for student performers</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Ambient lighting design creating intimate atmosphere</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Artisanal coffee and tea service throughout the event</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Professional recording of performances for artists</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Involved -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Departments That Created the Magic</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🎭</div>
+                    <h3 class="font-bold">Show Flow</h3>
+                    <p class="text-sm text-gray-400">Event Hosting & Flow</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">💡</div>
+                    <h3 class="font-bold">Lights & Sound</h3>
+                    <p class="text-sm text-gray-400">Acoustic Audio & Ambient Lighting</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🏗️</div>
+                    <h3 class="font-bold">Venue Setup</h3>
+                    <p class="text-sm text-gray-400">Stage & Seating Arrangement</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🍽️</div>
+                    <h3 class="font-bold">Food & Hospitality</h3>
+                    <p class="text-sm text-gray-400">Refreshments & Artist Care</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">📸</div>
+                    <h3 class="font-bold">Media & Content</h3>
+                    <p class="text-sm text-gray-400">Performance Recording</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🤝</div>
+                    <h3 class="font-bold">Client Coordination</h3>
+                    <p class="text-sm text-gray-400">Artist Relations & Scheduling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What People Said</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"The intimacy of Music Night 2022 was incredible. You could feel every emotion in the music. It was like having a private concert with 1200 of your closest friends."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-purple rounded-full flex items-center justify-center text-white font-bold">L</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Lakshmi Menon</p>
+                            <p class="text-sm text-gray-400">Music Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"As a performer, the acoustic setup was perfect. The sound quality was pristine, and the atmosphere allowed for real connection with the audience. Beautifully organized."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-pink rounded-full flex items-center justify-center text-white font-bold">K</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Kiran Nair</p>
+                            <p class="text-sm text-gray-400">Singer-Songwriter</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"The lighting design was absolutely magical. It transformed a simple outdoor space into an enchanted venue. Every detail was thoughtfully planned."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold">V</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Vikram Das</p>
+                            <p class="text-sm text-gray-400">Photography Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Love Intimate Musical Experiences?</h2>
+            <p class="text-xl mb-8 opacity-90">Join our team and help create more magical musical moments</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/join.html" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    Join the Crew
+                </a>
+                <a href="/events/" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    View All Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">EventureX</h3>
+                    <p class="text-gray-400">Empowering students to create unforgettable events and gain real-world experience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/events/" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="/departments/" class="text-gray-400 hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="/join.html" class="text-gray-400 hover:text-white transition-colors">Join Us</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Team</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/founders.html" class="text-gray-400 hover:text-white transition-colors">Founders</a></li>
+                        <li><a href="/x-core.html" class="text-gray-400 hover:text-white transition-colors">X-Core Team</a></li>
+                        <li><a href="/collaborators.html" class="text-gray-400 hover:text-white transition-colors">Collaborators</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">eventurex25@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 EventureX. All rights reserved. Where Students Power Events.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - EventureX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-pink': '#ec4899',
+                        'neon-blue': '#3b82f6',
+                        'neon-green': '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black/90 backdrop-blur-sm border-b border-purple-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold gradient-text">EventureX</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                        <a href="/events/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Events</a>
+                        <a href="/departments/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Departments</a>
+                        <a href="/founders.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                        <a href="/x-core.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">X-Core</a>
+                        <a href="/collaborators.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                        <a href="/join.html" class="bg-neon-purple text-white px-4 py-2 rounded-md">Join Us</a>
+                        <a href="/contact.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-20 bg-gradient-to-br from-black via-purple-900/20 to-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Become a Part of EventureX Crew</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Ready to gain real-world experience, build your network, and power incredible events? 
+                Join our team of passionate students making events unforgettable.
+            </p>
+            <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-6 max-w-lg mx-auto">
+                <h3 class="text-lg font-bold mb-2">What You'll Get:</h3>
+                <ul class="text-sm text-gray-300 space-y-1">
+                    <li>✨ Professional event management experience</li>
+                    <li>💰 Competitive compensation (₹500-₹1500 per event)</li>
+                    <li>🌐 Industry networking opportunities</li>
+                    <li>🏆 Portfolio building and skill development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="py-20">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">Application Form</h2>
+                
+                <!-- 
+                Form Setup Instructions:
+                To enable form submissions to eventurex25@gmail.com:
+                
+                Option 1 (Recommended): Netlify Forms
+                - Add data-netlify="true" to the form tag
+                - Deploy to Netlify and submissions will be automatically forwarded to eventurex25@gmail.com
+                
+                Option 2: Formspree
+                - Replace the action with: action="https://formspree.io/f/YOUR_FORM_ID"
+                - Configure at formspree.io to forward to eventurex25@gmail.com
+                
+                Option 3: Mailto Fallback (Current Implementation)
+                - Uses mailto: which opens email client with pre-filled content
+                -->
+                
+                <form id="joinForm" action="mailto:eventurex25@gmail.com" method="post" enctype="text/plain" data-netlify="true">
+                    <input type="hidden" name="form-name" value="join-application">
+                    <input type="hidden" name="department-prefill" id="departmentPrefill" value="">
+                    
+                    <!-- Full Name -->
+                    <div class="mb-6">
+                        <label for="fullName" class="block text-sm font-medium text-gray-300 mb-2">
+                            Full Name <span class="text-neon-pink">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                            Email Address <span class="text-neon-pink">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="mb-6">
+                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">
+                            Phone Number <span class="text-neon-pink">*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            required 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            placeholder="+91 XXXXX XXXXX"
+                        >
+                    </div>
+
+                    <!-- College/University -->
+                    <div class="mb-6">
+                        <label for="college" class="block text-sm font-medium text-gray-300 mb-2">
+                            College / University
+                        </label>
+                        <input 
+                            type="text" 
+                            id="college" 
+                            name="college" 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            placeholder="Your institution name"
+                        >
+                    </div>
+
+                    <!-- Department of Interest -->
+                    <div class="mb-6">
+                        <label for="department" class="block text-sm font-medium text-gray-300 mb-2">
+                            Department of Interest <span class="text-neon-pink">*</span>
+                        </label>
+                        <select 
+                            id="department" 
+                            name="department" 
+                            required 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                        >
+                            <option value="">Select a department</option>
+                            <optgroup label="Show Flow">
+                                <option value="mic-league">Mic League</option>
+                                <option value="script-syndicate">Script Syndicate</option>
+                                <option value="voice-ops">Voice Ops</option>
+                            </optgroup>
+                            <optgroup label="Security">
+                                <option value="shield-unit">Shield Unit</option>
+                                <option value="ops-blackout">Ops Blackout</option>
+                                <option value="frontline">Frontline</option>
+                            </optgroup>
+                            <optgroup label="Venue Setup">
+                                <option value="ground-force">Ground Force</option>
+                                <option value="stage-lords">Stage Lords</option>
+                                <option value="basecamp-ops">Basecamp Ops</option>
+                            </optgroup>
+                            <optgroup label="Lights & Sound Tech">
+                                <option value="lumina-league">Lumina League</option>
+                                <option value="sonic-syndicate">Sonic Syndicate</option>
+                                <option value="tech-pulse">Tech Pulse</option>
+                            </optgroup>
+                            <optgroup label="Food & Hospitality">
+                                <option value="feast-guild">Feast Guild</option>
+                                <option value="guestops-circle">GuestOps Circle</option>
+                                <option value="hostcraft">HostCraft</option>
+                            </optgroup>
+                            <optgroup label="Media & Content">
+                                <option value="frame-foundry">Frame Foundry</option>
+                                <option value="pixel-pack">Pixel Pack</option>
+                                <option value="edit-bay">Edit Bay</option>
+                            </optgroup>
+                            <optgroup label="Socials & Livestream">
+                                <option value="hype-house">Hype House</option>
+                                <option value="stream-squad">Stream Squad</option>
+                                <option value="buzz-unit">Buzz Unit</option>
+                            </optgroup>
+                            <optgroup label="Client Coordination">
+                                <option value="link-loop">Link Loop</option>
+                                <option value="ops-central">Ops Central</option>
+                                <option value="echo-chamber">Echo Chamber</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Skills & Experience -->
+                    <div class="mb-6">
+                        <label for="skills" class="block text-sm font-medium text-gray-300 mb-2">
+                            Skills & Experience
+                        </label>
+                        <textarea 
+                            id="skills" 
+                            name="skills" 
+                            rows="4" 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-vertical"
+                            placeholder="Tell us about your relevant skills, experience, software knowledge, or any projects you've worked on..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Pay Expectation -->
+                    <div class="mb-6">
+                        <label for="payExpectation" class="block text-sm font-medium text-gray-300 mb-2">
+                            Preferred Pay Expectation (per event)
+                        </label>
+                        <input 
+                            type="text" 
+                            id="payExpectation" 
+                            name="payExpectation" 
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            placeholder="e.g., ₹800-₹1200"
+                        >
+                    </div>
+
+                    <!-- Resume -->
+                    <div class="mb-6">
+                        <label for="resume" class="block text-sm font-medium text-gray-300 mb-2">
+                            Resume / CV
+                        </label>
+                        <div class="space-y-3">
+                            <input 
+                                type="file" 
+                                id="resume" 
+                                name="resume" 
+                                accept=".pdf,.doc,.docx" 
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500"
+                            >
+                            <div class="text-center text-gray-400">OR</div>
+                            <input 
+                                type="url" 
+                                id="resumeLink" 
+                                name="resumeLink" 
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                                placeholder="Link to your resume (Google Drive, Dropbox, etc.)"
+                            >
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2">Upload a file or provide a link to your resume</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button 
+                            type="submit" 
+                            class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
+                        >
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 border border-purple-500/30 rounded-lg p-8 max-w-md mx-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Application Submitted!</h3>
+                <p class="text-gray-300 mb-6">
+                    Thanks for your interest in joining EventureX! Our team will review your application and get back to you at the email address you provided within 3-5 business days.
+                </p>
+                <button 
+                    onclick="closeModal()" 
+                    class="bg-neon-purple hover:bg-purple-600 text-white px-6 py-2 rounded-lg transition-colors"
+                >
+                    Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">EventureX</h3>
+                    <p class="text-gray-400">Empowering students to create unforgettable events and gain real-world experience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/events/" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="/departments/" class="text-gray-400 hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="/join.html" class="text-gray-400 hover:text-white transition-colors">Join Us</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Team</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/founders.html" class="text-gray-400 hover:text-white transition-colors">Founders</a></li>
+                        <li><a href="/x-core.html" class="text-gray-400 hover:text-white transition-colors">X-Core Team</a></li>
+                        <li><a href="/collaborators.html" class="text-gray-400 hover:text-white transition-colors">Collaborators</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">eventurex25@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 EventureX. All rights reserved. Where Students Power Events.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle department prefilling from URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const deptParam = urlParams.get('dept');
+            
+            if (deptParam) {
+                const departmentSelect = document.getElementById('department');
+                const prefillInput = document.getElementById('departmentPrefill');
+                
+                // Set the select value if the department exists
+                for (let option of departmentSelect.options) {
+                    if (option.value === deptParam) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+                
+                // Set hidden field for form submission
+                prefillInput.value = deptParam;
+            }
+        });
+
+        // Form submission handler
+        document.getElementById('joinForm').addEventListener('submit', function(e) {
+            // For Netlify forms, let the form submit naturally
+            // For mailto fallback, show modal after submission
+            if (this.action.includes('mailto:')) {
+                setTimeout(() => {
+                    document.getElementById('successModal').classList.remove('hidden');
+                }, 100);
+            }
+        });
+
+        // Modal close function
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            // Reset form after closing modal
+            document.getElementById('joinForm').reset();
+        }
+
+        // Apply Now functionality for department pages
+        function applyNow(departmentId) {
+            const url = new URL(window.location.origin + '/join.html');
+            url.searchParams.set('dept', departmentId);
+            window.location.href = url.toString();
+        }
+        
+        // Make applyNow globally available for department pages
+        window.applyNow = applyNow;
+    </script>
+</body>
+</html>
