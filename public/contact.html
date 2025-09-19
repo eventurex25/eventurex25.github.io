@@ -145,13 +145,8 @@
                     <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-8">
                         <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
                         
-                        <!-- 
-                        Form Setup Instructions:
-                        Same setup as join.html form - add data-netlify="true" for Netlify Forms
-                        or configure with Formspree to forward to eventurex25@gmail.com
-                        -->
-                        
-                        <form id="contactForm" action="mailto:eventurex25@gmail.com" method="post" enctype="text/plain" data-netlify="true">
+                        <!-- Updated to use Formspree -->
+                        <form id="contactForm" action="https://formspree.io/f/xjkenyzr" method="POST">
                             <input type="hidden" name="form-name" value="contact-form">
                             <input type="hidden" name="inquiry-type-prefill" id="inquiryTypePrefill" value="">
                             
@@ -308,35 +303,39 @@
                 const inquiryTypeSelect = document.getElementById('inquiryType');
                 const prefillInput = document.getElementById('inquiryTypePrefill');
                 
-                // Set the select value if the type exists
                 for (let option of inquiryTypeSelect.options) {
                     if (option.value === typeParam) {
                         option.selected = true;
                         break;
                     }
                 }
-                
-                // Set hidden field for form submission
                 prefillInput.value = typeParam;
             }
         });
 
-        // Form submission handler
+        // Success Modal trigger for Formspree
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            // For Netlify forms, let the form submit naturally
-            // For mailto fallback, show modal after submission
-            if (this.action.includes('mailto:')) {
-                setTimeout(() => {
+            e.preventDefault();
+            const form = e.target;
+
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
                     document.getElementById('successModal').classList.remove('hidden');
-                }, 100);
-            }
+                    form.reset();
+                } else {
+                    alert('Oops! Something went wrong. Please try again later.');
+                }
+            }).catch(() => {
+                alert('Oops! Something went wrong. Please try again later.');
+            });
         });
 
-        // Modal close function
         function closeModal() {
             document.getElementById('successModal').classList.add('hidden');
-            // Reset form after closing modal
-            document.getElementById('contactForm').reset();
         }
     </script>
 </body>
