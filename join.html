@@ -96,8 +96,7 @@
                 - Uses mailto: which opens email client with pre-filled content
                 -->
                 
-                <form id="joinForm" action="mailto:eventurex25@gmail.com" method="post" enctype="text/plain" data-netlify="true">
-                    <input type="hidden" name="form-name" value="join-application">
+                <form id="joinForm" action="https://formspree.io/f/mjkenylr" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="department-prefill" id="departmentPrefill" value="">
                     
                     <!-- Full Name -->
@@ -110,7 +109,8 @@
                             id="fullName" 
                             name="fullName" 
                             required 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                             placeholder="Enter your full name"
                         >
                     </div>
@@ -125,7 +125,8 @@
                             id="email" 
                             name="email" 
                             required 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                             placeholder="your.email@example.com"
                         >
                     </div>
@@ -139,8 +140,10 @@
                             type="tel" 
                             id="phone" 
                             name="phone" 
+                            pattern="^\+?\d{10,15}$"
                             required 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                             placeholder="+91 XXXXX XXXXX"
                         >
                     </div>
@@ -154,7 +157,8 @@
                             type="text" 
                             id="college" 
                             name="college" 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                             placeholder="Your institution name"
                         >
                     </div>
@@ -168,7 +172,8 @@
                             id="department" 
                             name="department" 
                             required 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                         >
                             <option value="">Select a department</option>
                             <optgroup label="Show Flow">
@@ -223,7 +228,8 @@
                             id="skills" 
                             name="skills" 
                             rows="4" 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-vertical"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-vertical"
                             placeholder="Tell us about your relevant skills, experience, software knowledge, or any projects you've worked on..."
                         ></textarea>
                     </div>
@@ -237,7 +243,8 @@
                             type="text" 
                             id="payExpectation" 
                             name="payExpectation" 
-                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                            class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                            focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                             placeholder="e.g., ₹800-₹1200"
                         >
                     </div>
@@ -253,14 +260,17 @@
                                 id="resume" 
                                 name="resume" 
                                 accept=".pdf,.doc,.docx" 
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-500"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white 
+                                file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold 
+                                file:bg-purple-600 file:text-white hover:file:bg-purple-500"
                             >
                             <div class="text-center text-gray-400">OR</div>
                             <input 
                                 type="url" 
                                 id="resumeLink" 
                                 name="resumeLink" 
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 
+                                focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
                                 placeholder="Link to your resume (Google Drive, Dropbox, etc.)"
                             >
                         </div>
@@ -271,12 +281,15 @@
                     <div class="text-center">
                         <button 
                             type="submit" 
-                            class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
+                            class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 
+                            text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 
+                            focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
                         >
                             Submit Application
                         </button>
                     </div>
                 </form>
+
             </div>
         </div>
     </section>
