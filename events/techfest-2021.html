@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFest 2021 - EventureX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-pink': '#ec4899',
+                        'neon-blue': '#3b82f6',
+                        'neon-green': '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-black/90 backdrop-blur-sm border-b border-purple-500/30 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold gradient-text">EventureX</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Home</a>
+                        <a href="/events/" class="text-neon-purple px-3 py-2">Events</a>
+                        <a href="/departments/" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Departments</a>
+                        <a href="/founders.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Founders</a>
+                        <a href="/x-core.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">X-Core</a>
+                        <a href="/collaborators.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Collaborators</a>
+                        <a href="/join.html" class="bg-neon-purple hover:bg-purple-600 text-white px-4 py-2 rounded-md transition-colors">Join Us</a>
+                        <a href="/contact.html" class="text-white hover:text-neon-purple transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-black via-purple-900/20 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text leading-tight md:leading-snug">TechFest 2021</h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Innovation meets inspiration at our premier technology festival showcasing the future of tech through competitions, workshops, and industry insights.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Stats -->
+    <section class="py-12 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-neon-purple mb-2">3,000+</div>
+                    <div class="text-gray-400">Attendees</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-pink mb-2">2</div>
+                    <div class="text-gray-400">Days</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-blue mb-2">25</div>
+                    <div class="text-gray-400">Workshops</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-neon-green mb-2">80</div>
+                    <div class="text-gray-400">Crew Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Images -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt="Tech Workshop" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Innovation Showcase" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden border border-purple-500/30">
+                    <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=300&fit=crop" alt="Tech Competition" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Description -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-lg prose-invert max-w-none">
+                <h2 class="text-3xl font-bold mb-8">About TechFest 2021</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    TechFest 2021 marked a pivotal moment for EventureX as we ventured into the world of technology and innovation. This two-day festival brought together over 3,000 tech enthusiasts, students, industry professionals, and innovators to explore the cutting edge of technology through hands-on workshops, competitive challenges, and inspiring keynote presentations.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    The festival was structured around four main pillars: Learn, Compete, Network, and Innovate. Our Learn track featured 25 intensive workshops covering everything from artificial intelligence and machine learning to blockchain development and cybersecurity. Industry experts from leading tech companies shared their knowledge through practical, hands-on sessions that left participants with real skills they could apply immediately.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    The Compete pillar hosted multiple hackathons and coding competitions, including a 24-hour hackathon that challenged teams to develop solutions for real-world problems. The energy was electric as programmers, designers, and entrepreneurs collaborated through the night, fueled by pizza, coffee, and pure passion for innovation. Winners received substantial cash prizes and mentorship opportunities with startup accelerators.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-8">
+                    What set TechFest 2021 apart was our focus on making technology accessible to everyone, regardless of their technical background. We included sessions on tech entrepreneurship, digital marketing for tech startups, and the societal impact of emerging technologies. Our diverse crew of 80 students worked seamlessly to create an environment where curiosity thrived and connections were made that continue to flourish today.
+                </p>
+
+                <h3 class="text-2xl font-bold mb-6">Event Highlights</h3>
+                <ul class="list-none space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">24-hour hackathon with ₹2 lakh in total prizes</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">AI/ML workshops led by Google and Microsoft engineers</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Startup pitch competition judged by prominent VCs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Tech career fair with 50+ recruiting companies</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-neon-purple mr-3">•</span>
+                        <span class="text-gray-300">Innovation expo showcasing 100+ student projects</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Involved -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Departments That Powered Innovation</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🎭</div>
+                    <h3 class="font-bold">Show Flow</h3>
+                    <p class="text-sm text-gray-400">Event Coordination & Presentations</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">💡</div>
+                    <h3 class="font-bold">Lights & Sound</h3>
+                    <p class="text-sm text-gray-400">AV Setup & Live Streaming</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🏗️</div>
+                    <h3 class="font-bold">Venue Setup</h3>
+                    <p class="text-sm text-gray-400">Workshop Spaces & Exhibition Areas</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🛡️</div>
+                    <h3 class="font-bold">Security</h3>
+                    <p class="text-sm text-gray-400">Equipment Security & Access Control</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🍽️</div>
+                    <h3 class="font-bold">Food & Hospitality</h3>
+                    <p class="text-sm text-gray-400">Hackathon Fuel & Speaker Care</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">📸</div>
+                    <h3 class="font-bold">Media & Content</h3>
+                    <p class="text-sm text-gray-400">Event Documentation & Social Media</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">📱</div>
+                    <h3 class="font-bold">Socials & Livestream</h3>
+                    <p class="text-sm text-gray-400">Live Coverage & Digital Engagement</p>
+                </div>
+                <div class="bg-gray-800/50 border border-purple-500/30 rounded-lg p-4 text-center">
+                    <div class="text-2xl mb-2">🤝</div>
+                    <h3 class="font-bold">Client Coordination</h3>
+                    <p class="text-sm text-gray-400">Speaker & Sponsor Relations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What People Said</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"TechFest 2021 was incredible! The workshops were top-notch and the hackathon was the most intense and rewarding 24 hours of my college life. Made connections that landed me my dream job."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-purple rounded-full flex items-center justify-center text-white font-bold">R</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Rajesh Kumar</p>
+                            <p class="text-sm text-gray-400">Software Engineer, Google</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"As a industry mentor, I was impressed by the quality of organization and the genuine enthusiasm of the students. EventureX created a truly professional tech conference experience."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-pink rounded-full flex items-center justify-center text-white font-bold">P</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Priya Sharma</p>
+                            <p class="text-sm text-gray-400">Director of Engineering, Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg border border-purple-500/30">
+                    <p class="text-gray-300 mb-4">"The startup pitch competition was professionally run and the feedback from judges was invaluable. Our team's idea evolved significantly thanks to TechFest mentorship."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-neon-blue rounded-full flex items-center justify-center text-white font-bold">A</div>
+                        <div class="ml-3">
+                            <p class="font-medium">Ankit Verma</p>
+                            <p class="text-sm text-gray-400">Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Passionate About Technology?</h2>
+            <p class="text-xl mb-8 opacity-90">Join our team and help create the next generation of tech events</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/join.html" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    Join the Crew
+                </a>
+                <a href="/events/" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105">
+                    View All Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">EventureX</h3>
+                    <p class="text-gray-400">Empowering students to create unforgettable events and gain real-world experience.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/events/" class="text-gray-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="/departments/" class="text-gray-400 hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="/join.html" class="text-gray-400 hover:text-white transition-colors">Join Us</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Team</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/founders.html" class="text-gray-400 hover:text-white transition-colors">Founders</a></li>
+                        <li><a href="/x-core.html" class="text-gray-400 hover:text-white transition-colors">X-Core Team</a></li>
+                        <li><a href="/collaborators.html" class="text-gray-400 hover:text-white transition-colors">Collaborators</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">eventurex25@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 EventureX. All rights reserved. Where Students Power Events.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
